@@ -14,7 +14,7 @@ The goal is to verify the functionality of the Full Adder by simulating it and c
 
 `Code Implementation:`
 
-Dataflow Model: <br>
+#Dataflow Model: <br>
 In the dataflow model, the Full Adder is designed using logical equations for sum and carry.<br>
 
 module full_adder_dataflow(input a, input b, input cin, output sum, output carry);<br>
@@ -22,7 +22,7 @@ module full_adder_dataflow(input a, input b, input cin, output sum, output carry
   assign carry = (a & b) | (b & cin) | (a & cin);<br>
 endmodule<br>
 
-Behavioral Model: <br>
+#Behavioral Model: <br>
 The behavioral model uses an always block to describe the functionality of the Full Adder.<br>
 
 module full_adder_behavioral(input a, input b, input cin, output reg sum, output reg carry);<br>
@@ -32,7 +32,7 @@ module full_adder_behavioral(input a, input b, input cin, output reg sum, output
   end<br>
 endmodule<br>
 
-Structural Model: <br>
+#Structural Model: <br>
 The structural model describes the Full Adder using basic gates and two Half Adders. <br>
 A Full Adder can be constructed using two Half Adders and an OR gate for the final carry.<br>
 
